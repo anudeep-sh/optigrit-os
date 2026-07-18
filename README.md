@@ -109,6 +109,110 @@ It is one continuous improvement cycle.
 
 ---
 
+# Product Architecture
+
+OptiGrit models education as a continuous lifecycle rather than a collection of independent modules.
+
+```text
+                                      Institution
+                                           │
+                                           │
+                          Defines Academic Structure
+                                           │
+                                           ▼
+                                     Curriculum
+                                           │
+                                           ▼
+                                      Subject
+                                 (What to Teach)
+                                           │
+                                           │ implemented as
+                                           ▼
+                                      Course
+                                 (How to Teach)
+                                           │
+                         Organizes reusable knowledge
+                                           │
+          ┌─────────────────────────────────────────────────┐
+          │                                                 │
+          ▼                                                 ▼
+     Learning Assets                              Learning Outcomes
+(Videos, Documents, Labs, etc.)                 (Expected Competencies)
+          │                                                 │
+          └─────────────────────────────────────────────────┘
+                                           │
+                                           ▼
+                                 Teaching Schedule
+                            (When & For Whom to Teach)
+                                           │
+                                           ▼
+                                       Lectures
+                              (Actual Teaching Sessions)
+                                           │
+          ┌────────────────────────────────────────────────────┐
+          │                     │                              │
+          ▼                     ▼                              ▼
+     Attendance          Discussions & Chat             Announcements
+          │                     │                              │
+          └─────────────────────┴──────────────────────────────┘
+                                           │
+                                           ▼
+                                   Learner Activity
+                                           │
+          ┌────────────────────────────────────────────────────┐
+          │                     │                              │
+          ▼                     ▼                              ▼
+   Learning Sessions        Tasks & Practice           Assessments
+                                                          │
+                                                          ▼
+                                                     Submissions
+                                                          │
+                                                          ▼
+                                                        Results
+                                                          │
+                                                          ▼
+                                                        Progress
+                                                          │
+                                                          ▼
+                                                       Analytics
+                                                          │
+                                                          ▼
+                                                  Recommendations
+                                                          │
+                                                          ▼
+                                                Course Improvements
+                                                          │
+                                                          ▼
+                                                  New Course Version
+                                                          │
+                                                          └──────────────┐
+                                                                         │
+                                                                         ▼
+                                                          Better Teaching Next Semester
+```
+
+---
+
+## Reading the Diagram
+
+The platform begins with an **Institution**, which defines its academic structure and curriculum.
+
+A **Subject** represents **what** should be taught.
+
+A **Course** represents **how** that Subject is taught. It organizes reusable Learning Assets and defines the intended Learning Outcomes.
+
+When a Course is offered to a batch of learners, it becomes a **Teaching Schedule**, which is executed through **Lectures**.
+
+During teaching, learners interact with content, complete Tasks, participate in Discussions, and take Assessments.
+
+Those activities generate **Progress**, which feeds **Analytics**.
+
+Analytics produce **Recommendations** that help educators improve Courses, teaching strategies, and assessments.
+
+Those improvements become the next version of the Course, completing the continuous improvement cycle.
+
+This feedback loop is the central idea behind OptiGrit.
+
 # What OptiGrit Is Not
 
 OptiGrit is **not** just another Learning Management System.
