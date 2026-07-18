@@ -73,3 +73,31 @@ AI reduces repetitive work.
 AI identifies patterns humans may miss.
 
 AI does not replace academic judgment.
+
+                  Create Knowledge
+                        │
+                        ▼
+                  Plan Teaching
+                        │
+                        ▼
+                  Deliver Teaching
+                        │
+                        ▼
+                  Learning Happens
+                        │
+                        ▼
+                Measure Understanding
+                        │
+                        ▼
+                 Generate Analytics
+                        │
+                        ▼
+             Produce Recommendations
+                        │
+                        ▼
+            Improve Courses & Teaching
+                        │
+                        └──────────────────────┐
+                                               │
+                                               ▼
+                                  Next Academic Cycle
